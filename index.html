@@ -458,8 +458,6 @@
 .mobile-menu a:hover{ background: rgba(255,255,255,.10); }
 .mobile-menu .cta-button{ display:block; text-align:center; margin-top: 6px; }
 
-
-
 /* Contact form */
 .contact-form{
   margin: 18px auto 0;
@@ -685,21 +683,9 @@
 </a>
 
   <!-- Lead form (demo). Swap action to a real endpoint (Tally/Typeform/Formspark/Zapier webhook). -->
-  <form class="contact-form" action="#" method="post" onsubmit="return handleLeadSubmit(event)">
-    <div class="form-row">
-      <input name="name" type="text" placeholder="Your name" autocomplete="name" />
-      <input name="email" type="email" placeholder="Email" autocomplete="email" required />
-    </div>
-    <textarea name="message" placeholder="What car are you shopping for? Budget, timeline, and any offers you have…"></textarea>
-    <button class="cta-button" type="submit" data-cta="lead_submit">Send</button>
-    <p class="form-hint" id="formHint" aria-live="polite"></p>
-  </form>
+  
 
-  <div class="thanks" id="thanks" hidden>
-    <strong>Thanks — I’ll get back to you shortly.</strong>
-    <div style="margin-top:6px; color: rgba(255,255,255,.70);">
-      Prefer email? <a href="mailto:you@yourdomain.com" style="text-decoration: underline;">you@yourdomain.com</a>
-    </div>
+  
   </div>
 </section>
 
@@ -758,17 +744,7 @@
   }
 
   // Lead form (demo)
-  function handleLeadSubmit(e){
-    e.preventDefault();
-    const hint = document.getElementById("formHint");
-    const thanks = document.getElementById("thanks");
-    if (hint) hint.textContent = "Sent! (Demo mode — connect a form endpoint to receive messages.)";
-    if (thanks) thanks.hidden = false;
-    track("lead_submit", { method: "contact_form" });
-    thanks?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    return false;
-  }
-</script>
+  </script>
 
 </body>
 </html>
