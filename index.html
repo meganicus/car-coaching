@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bay Area Car Buying Coach - Expert Guidance, Better Deals</title>
-
-    <meta name="description" content="Expert guidance to buy or lease a car in the Bay Area—avoid traps, negotiate confidently, and save money." />
-    <link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+    <title>Bay Area Car Buying Coach (SF • San Jose • Oakland) | Bay Area Car Coaching</title>
+    <meta name="description" content="Expert guidance to buy or lease a car in the Bay Area (San Francisco, San Jose, Oakland)—avoid traps, negotiate confidently, and save money." />
+    <link rel="canonical" href="https://bayareacarcoaching.com/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bay Area Car Buying Coach - Expert Guidance, Better Deals" />
-    <meta property="og:description" content="Expert guidance to buy or lease a car in the Bay Area—avoid traps, negotiate confidently, and save money." />
-    <meta property="og:url" content="https://YOUR-DOMAIN.com/" />
-    <meta property="og:image" content="https://YOUR-DOMAIN.com/og.jpg" />
+    <meta property="og:title" content="Bay Area Car Buying Coach" />
+    <meta property="og:description" content="Buy or lease with confidence in the Bay Area. SF • San Jose • Oakland." />
+    <meta property="og:url" content="https://bayareacarcoaching.com/" />
+    <meta property="og:image" content="https://bayareacarcoaching.com/og.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bay Area Car Buying Coach - Expert Guidance, Better Deals" />
-    <meta name="twitter:description" content="Expert guidance to buy or lease a car in the Bay Area—avoid traps, negotiate confidently, and save money." />
-    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og.jpg" />
+    <meta name="twitter:title" content="Bay Area Car Buying Coach" />
+    <meta name="twitter:description" content="Buy or lease with confidence in the Bay Area. SF • San Jose • Oakland." />
+    <meta name="twitter:image" content="https://bayareacarcoaching.com/og.jpg" />
 
     
     <!-- Google tag (gtag.js) -->
@@ -421,138 +420,124 @@
             }
         }
     
+/* FAQ */
+.faq { padding-top: 48px; }
+.faq h2 { text-align:center; margin-bottom: 18px; }
+.faq-grid { max-width: 860px; margin: 0 auto; display: grid; gap: 12px; }
+.faq-item { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 4px 10px; }
+.faq-item summary { cursor: pointer; padding: 12px 10px; font-weight: 700; list-style: none; }
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-item p { margin: 0 10px 14px; color: rgba(255,255,255,.75); line-height: 1.5; font-size: 14px; }
 
-/* Accessibility */
-.sr-only{
-  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
-  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
-}
-
-/* Mobile menu (overlay + panel) */
-.menu-overlay{
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,.35);
-  backdrop-filter: blur(2px);
-  z-index: 90;
-}
-.mobile-menu{
-  position: fixed;
-  top: 72px;
-  right: 18px;
-  width: min(320px, calc(100vw - 36px));
-  background: rgba(18,18,22,.86);
-  border: 1px solid rgba(255,255,255,.10);
-  backdrop-filter: blur(12px);
-  border-radius: 18px;
-  padding: 10px;
-  z-index: 100;
-  box-shadow: 0 24px 80px rgba(0,0,0,.55);
-}
-.mobile-menu a{
-  display:block;
-  padding: 12px 12px;
-  border-radius: 14px;
-  color: #fff;
-  text-decoration:none;
-}
-.mobile-menu a:hover{ background: rgba(255,255,255,.10); }
-.mobile-menu .cta-button{ display:block; text-align:center; margin-top: 6px; }
-
-/* Contact form */
-.contact-form{
-  margin: 18px auto 0;
-  max-width: 760px;
-  padding: 18px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-}
-.contact-form .form-row{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.contact-form input,
-.contact-form textarea{
-  width:100%;
-  padding: 12px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(0,0,0,.20);
-  color: #fff;
-  outline: none;
-  font-size: 14px;
-}
-.contact-form textarea{
-  margin-top: 10px;
-  min-height: 120px;
-  resize: vertical;
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder{ color: rgba(255,255,255,.60); }
-.form-hint{ margin: 10px 0 0; font-size: 13px; color: rgba(255,255,255,.65); }
-
-.thanks{
-  margin: 14px auto 0;
-  max-width: 760px;
-  padding: 16px 18px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-}
-
-.site-footer{
-  margin: 26px auto 26px;
-  max-width: 1100px;
-  padding: 14px 16px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
-}
-.site-footer p{ margin:0; color: rgba(255,255,255,.70); font-size: 14px; }
-.footer-links{ display:flex; gap: 14px; font-size: 14px; color: rgba(255,255,255,.70); }
-.footer-links a{ color: inherit; text-decoration:none; }
-.footer-links a:hover{ color: #fff; }
-
-@media (max-width: 720px){
-  .contact-form .form-row{ grid-template-columns: 1fr; }
-  .site-footer{ flex-direction: column; align-items:flex-start; }
-}
-
+/* Mobile nav open state */
+.nav-links.open { display: flex !important; }
 </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bay Area Car Coaching",
+  "url": "https://bayareacarcoaching.com/",
+  "email": "carbuycoaching@gmail.com",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "San Francisco Bay Area"
+    },
+    {
+      "@type": "City",
+      "name": "San Francisco"
+    },
+    {
+      "@type": "City",
+      "name": "San Jose"
+    },
+    {
+      "@type": "City",
+      "name": "Oakland"
+    }
+  ],
+  "serviceType": [
+    "Car buying coach",
+    "Car lease coach",
+    "Deal review",
+    "Negotiation coaching"
+  ],
+  "priceRange": "$$"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What exactly do you do as a car buying coach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I help you compare offers, spot hidden costs, and build a simple negotiation plan so you can buy or lease with confidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with leases and purchases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes—new or used, purchase or lease. I’ll tailor the strategy to your goals, budget, and timeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much money can you typically help people save?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Results vary by vehicle and market conditions, but clients commonly save by avoiding add-ons and improving deal structure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you talk to the dealership for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I can help you draft messages and negotiation scripts. Depending on your plan, outreach support may be included."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help remotely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Most coaching is remote (phone/email/text) anywhere in the Bay Area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I reach out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideally before you visit the dealership. If you already have an offer, I can review it before you sign."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <header class="site-header">
-  <nav class="site-nav" aria-label="Primary">
-    <a href="/" class="logo" aria-label="Home">🚗 Bay Area Car Coaching</a>
-
-    <ul class="nav-links" aria-label="Site">
-      <li><a href="#why-us">Why Us</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button" data-cta="get_started">Get Started</a>
-
-    <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobileMenu">
-      <span class="sr-only">Open menu</span>
-      ☰
-    </button>
-  </nav>
-
-  <!-- Mobile menu overlay + panel -->
-  <div class="menu-overlay" hidden></div>
-  <div id="mobileMenu" class="mobile-menu" hidden>
-    <a href="#why-us">Why Us</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-    <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button" data-cta="get_started_mobile">Get Started</a>
-  </div>
-</header>
+    <header>
+        <nav>
+            <a href="/" class="logo">🚗 Bay Area Car Coaching</a>
+            <ul class="nav-links">
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button">Get Started</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
 
     <section class="hero">
         <div class="hero-content">
@@ -672,79 +657,69 @@
     </section>
 
     
-<section class="contact" id="contact">
-  <h2>Get in Touch</h2>
-  <p>Have questions? Reach out and we'll be happy to help.</p>
-
-  <!-- Replace with your real email -->
-  <a href="mailto:carbuycoaching@gmail.com" class="contact-email">
-  <span class="contact-email-icon">✉️</span>
-  <span>carbuycoaching@gmail.com</span>
-</a>
-
-  <!-- Lead form (demo). Swap action to a real endpoint (Tally/Typeform/Formspark/Zapier webhook). -->
-  
-
-  
+<section class="faq" id="faq">
+  <h2>FAQ</h2>
+  <div class="faq-grid">
+    <details class="faq-item">
+      <summary>What exactly do you do as a car buying coach?</summary>
+      <p>I help you compare offers, spot hidden costs, and build a simple negotiation plan so you can buy or lease with confidence.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you work with leases and purchases?</summary>
+      <p>Yes—new or used, purchase or lease. I’ll tailor the strategy to your goals, budget, and timeline.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How much money can you typically help people save?</summary>
+      <p>Results vary by vehicle and market conditions, but clients commonly save by avoiding add-ons and improving deal structure.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you talk to the dealership for me?</summary>
+      <p>I can help you draft messages and negotiation scripts. Depending on your plan, outreach support may be included.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can you help remotely?</summary>
+      <p>Yes. Most coaching is remote (phone/email/text) anywhere in the Bay Area.</p>
+    </details>
+    <details class="faq-item">
+      <summary>When should I reach out?</summary>
+      <p>Ideally before you visit the dealership. If you already have an offer, I can review it before you sign.</p>
+    </details>
   </div>
 </section>
 
-<footer class="site-footer">
+<section class="contact" id="contact">
+  <h2>Get in Touch</h2>
+  <p>Have questions? Reach out and we'll be happy to help.</p>
+  <a href="mailto:carbuycoaching@gmail.com" class="contact-email" data-cta="email">
+    <span class="contact-email-icon">✉️</span>
+    <span>carbuycoaching@gmail.com</span>
+  </a>
+</section>
+
+<footer>
   <p>© <span id="year"></span> Bay Area Car Coaching</p>
-  <div class="footer-links">
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-    <a href="#" onclick="alert('Add your privacy policy link.'); return false;">Privacy</a>
-  </div>
 </footer>
 
 <script>
-  // Footer year
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Analytics helper
-  function track(eventName, params){
-    try { if (typeof gtag === 'function') gtag('event', eventName, params || {}); } catch(e) {}
-  }
-
-  // Track CTA clicks
-  document.querySelectorAll("[data-cta]").forEach(el => {
-    el.addEventListener("click", () => track("cta_click", { cta: el.getAttribute("data-cta") || "unknown" }));
-  });
-
-  // Mobile menu controls
-  const menuBtn = document.querySelector(".mobile-menu-btn");
-  const menu = document.getElementById("mobileMenu");
-  const overlay = document.querySelector(".menu-overlay");
-
-  function openMenu(){
-    if (!menuBtn || !menu || !overlay) return;
-    overlay.hidden = false;
-    menu.hidden = false;
-    menuBtn.setAttribute("aria-expanded", "true");
-    track("menu_open", { location: "header" });
-  }
-  function closeMenu(){
-    if (!menuBtn || !menu || !overlay) return;
-    overlay.hidden = true;
-    menu.hidden = true;
-    menuBtn.setAttribute("aria-expanded", "false");
-    track("menu_close", { location: "header" });
-  }
-
-  if (menuBtn && menu && overlay){
-    menuBtn.addEventListener("click", () => {
-      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
-      expanded ? closeMenu() : openMenu();
+  const btn = document.querySelector(".mobile-menu-btn");
+  const nav = document.querySelector(".nav-links");
+  if (btn && nav) {
+    btn.setAttribute("aria-expanded", "false");
+    btn.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
-
-    overlay.addEventListener("click", closeMenu);
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
   }
 
-  // Lead form (demo)
-  </script>
+  const email = document.querySelector('[data-cta="email"]');
+  if (email) {
+    email.addEventListener("click", () => {
+      try { if (typeof gtag === 'function') gtag('event', 'cta_click', { cta: 'email' }); } catch(e) {}
+    });
+  }
+</script>
 
 </body>
 </html>
