@@ -60,10 +60,13 @@
         }
 
         .logo {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #2563eb;
-            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 150px;
+            width: auto;
         }
 
         .nav-links {
@@ -438,7 +441,7 @@
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">🚗 Bay Area Car Coaching</a>
+            <a href="/" class="logo"><img src="round_logo.png" alt="Bay Area Car Buying Coach"></a>
             <ul class="nav-links">
                 <li><a href="#why-us">Why Us</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -571,9 +574,9 @@
 <section class="contact" id="contact">
   <h2>Get in Touch</h2>
   <p>Have questions? Reach out and we'll be happy to help.</p>
-  <a href="mailto:carbuycoaching@gmail.com" class="contact-email" data-cta="email">
+  <a href="/cdn-cgi/l/email-protection#a1c2c0d3c3d4d8c2cec0c2c9c8cfc6e1c6ccc0c8cd8fc2cecc" class="contact-email" data-cta="email">
     <span class="contact-email-icon">✉️</span>
-    <span>carbuycoaching@gmail.com</span>
+    <span><span class="__cf_email__" data-cfemail="6704061505121e040806040f0e090027000a060e0b4904080a">[email&#160;protected]</span></span>
   </a>
 </section>
 
@@ -581,7 +584,7 @@
   <p>© <span id="year"></span> Bay Area Car Coaching</p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   document.getElementById("year").textContent = new Date().getFullYear();
 
   const btn = document.querySelector(".mobile-menu-btn");
@@ -594,13 +597,4 @@
     });
   }
 
-  const email = document.querySelector('[data-cta="email"]');
-  if (email) {
-    email.addEventListener("click", () => {
-      try { if (typeof gtag === 'function') gtag('event', 'cta_click', { cta: 'email' }); } catch(e) {}
-    });
-  }
-</script>
-
-</body>
-</html>
+  const ema
