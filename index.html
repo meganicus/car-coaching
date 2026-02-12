@@ -434,6 +434,18 @@
 
 /* Mobile nav open state */
 .nav-links.open { display: flex !important; }
+
+/* Embedded intake form */
+.form-section { background: #f8fafc; padding: 5rem 2rem; text-align: center; }
+.form-section h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #1a1a1a; }
+.form-section p { font-size: 1.2rem; color: #64748b; margin-bottom: 2rem; }
+.form-embed-wrap { max-width: 900px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); overflow: hidden; }
+.form-embed-wrap iframe { width: 100%; height: 1200px; border: 0; }
+.form-actions { margin-top: 1.5rem; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.secondary-button { background: white; color: #2563eb; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 700; border: 1px solid rgba(37,99,235,0.35); transition: all 0.25s; }
+.secondary-button:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(37,99,235,0.15); }
+@media (max-width: 768px) { .form-section h2 { font-size: 2rem; } .form-embed-wrap iframe { height: 1350px; } }
+
 </style>
 
     
@@ -445,9 +457,10 @@
             <ul class="nav-links">
                 <li><a href="#why-us">Why Us</a></li>
                 <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#get-started">Get Started</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button">Get Started</a>
+            <a href="#get-started" class="cta-button">Get Started</a>
             <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
@@ -456,7 +469,7 @@
         <div class="hero-content">
             <h1>Don't Pay Thousands More Than You Should</h1>
             <p>Expert 1-on-1 coaching to navigate the car buying process with confidence. Save money, time, and stress.</p>
-            <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">Start Your Coaching Session</a>
+            <a href="#get-started" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">Start Your Coaching Session</a>
             
             <div class="hero-stats">
                 <div class="stat">
@@ -558,7 +571,7 @@
             <div class="price">$150</div>
             <div class="savings">Save $100 💰</div>
             <p style="color: #64748b; margin: 1.5rem 0;">Complete 1-on-1 coaching through the entire car buying process</p>
-            <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2.5rem; display: inline-block; margin-top: 1rem;">Book Your Session</a>
+            <a href="#get-started" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2.5rem; display: inline-block; margin-top: 1rem;">Book Your Session</a>
             <p class="limited-time">⏰ Offer ends February 28, 2026</p>
         </div>
     </section>
@@ -566,10 +579,25 @@
     <section class="final-cta">
         <h2>Ready to Buy Your Car with Confidence?</h2>
         <p>Stop overpaying. Get the insider knowledge you need to negotiate like a pro.</p>
-        <a href="https://form.typeform.com/to/hqgroXfV" class="cta-button" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">Get Started Today</a>
+        <a href="#get-started" class="cta-button" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">Get Started Today</a>
     </section>
 
     
+
+
+<section class="form-section" id="get-started">
+  <h2>Start Your Coaching Session</h2>
+  <p>Fill out the quick assessment below. If you already have a quote or buyer’s order, include it so I can review faster.</p>
+
+  <div class="form-embed-wrap" aria-label="Car Buying Assessment Form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHerr9h0rRJgt8zNPUrA-nrnOx79uLiw4KZsKA4uRNvIrBzw/viewform?embedded=true" loading="lazy">Loading…</iframe>
+  </div>
+
+  <div class="form-actions">
+    <a class="cta-button" href="#pricing">See Pricing</a>
+    <a class="secondary-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdHerr9h0rRJgt8zNPUrA-nrnOx79uLiw4KZsKA4uRNvIrBzw/viewform" target="_blank" rel="noopener">Open Form in a New Tab</a>
+  </div>
+</section>
 
 <section class="contact" id="contact">
   <h2>Get in Touch</h2>
@@ -597,4 +625,7 @@
     });
   }
 
-  const ema
+
+</script>
+</body>
+</html>
