@@ -434,19 +434,6 @@
 
 /* Mobile nav open state */
 .nav-links.open { display: flex !important; }
-
-/* Embedded intake form */
-.form-section { background: #f8fafc; padding: 5rem 2rem; text-align: center; }
-.form-section h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #1a1a1a; }
-.form-section p { font-size: 1.2rem; color: #64748b; margin-bottom: 2rem; }
-.form-embed-wrap { max-width: 900px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); overflow: hidden; }
-.form-embed-wrap iframe { width: 100%; height: 1200px; border: 0; }
-.form-actions { margin-top: 1.5rem; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
-.form-note { max-width: 900px; margin: 16px auto 0; font-size: 14px; color: #475569; }
-.secondary-button { background: white; color: #2563eb; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 700; border: 1px solid rgba(37,99,235,0.35); transition: all 0.25s; }
-.secondary-button:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(37,99,235,0.15); }
-@media (max-width: 768px) { .form-section h2 { font-size: 2rem; } .form-embed-wrap iframe { height: 1350px; } }
-
 </style>
 
     
@@ -586,22 +573,26 @@
     
 
 
-<section class="form-section" id="get-started">
+<section id="get-started" class="contact" style="padding-top: 5rem;">
   <h2>Start Your Coaching Session</h2>
-  <p>Fill out the quick assessment below. If you already have a quote or buyer’s order, include it so I can review faster.</p>
+  <p>Fill out the assessment below. After you submit, click the button to confirm your submission (for tracking).</p>
 
-  <div class="form-embed-wrap" aria-label="Car Buying Assessment Form">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHerr9h0rRJgt8zNPUrA-nrnOx79uLiw4KZsKA4uRNvIrBzw/viewform?embedded=true" loading="lazy">Loading…</iframe>
+  <div style="max-width: 900px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); overflow: hidden;">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdHerr9h0rRJgt8zNPUrA-nrnOx79uLiw4KZsKA4uRNvIrBzw/viewform?embedded=true"
+      style="width:100%; height:1200px; border:0;"
+      loading="lazy">
+    </iframe>
   </div>
 
-  <div class="form-actions">
-    <a class="cta-button" href="/thank-you">Continue (after you submit)</a>
-    <a class="secondary-button" href="#pricing">See Pricing</a>
-    <a class="secondary-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdHerr9h0rRJgt8zNPUrA-nrnOx79uLiw4KZsKA4uRNvIrBzw/viewform" target="_blank" rel="noopener">Open Form in a New Tab</a>
+  <div style="margin-top: 1.5rem;">
+    <a href="thank-you.html" class="cta-button" style="font-size: 1.05rem; padding: 1rem 2rem; display:inline-block;">I Submitted — Continue</a>
+    <p style="margin-top: .75rem; font-size: .95rem; color: #64748b;">
+      If you don't see a confirmation screen in the form, scroll to the bottom and click “Submit”.
+    </p>
   </div>
-
-  <p class="form-note"><strong>Important:</strong> Google Forms can’t automatically redirect after submission. After you click <em>Submit</em>, please click <strong>Continue</strong> above so we can confirm your submission and track it for Google Ads.</p>
 </section>
+
 
 <section class="contact" id="contact">
   <h2>Get in Touch</h2>
@@ -629,7 +620,7 @@
     });
   }
 
-
+  const ema
 </script>
 </body>
 </html>
