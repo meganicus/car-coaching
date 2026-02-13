@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Your Session | Bay Area Car Coaching</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <style>
+    :root{
+      --blue:#2563eb;
+      --blueDark:#1d4ed8;
+      --text:#1a1a1a;
+      --muted:#64748b;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --shadow: 0 20px 40px rgba(0,0,0,0.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      padding:2.75rem 1.25rem 3.5rem;
+    }
+    .wrap{max-width:980px;margin:0 auto}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:2rem 1.5rem;
+    }
+    h1{font-size:2.0rem;line-height:1.2;margin-bottom:0.5rem;text-align:center}
+    p{color:var(--muted);font-size:1.1rem;margin:0 0 1.25rem;text-align:center}
+
+    /* Responsive iframe */
+    .frame-wrap{
+      width:100%;
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.08);
+      background:#fff;
+    }
+    iframe{
+      width:100%;
+      height:760px;
+      border:0;
+      display:block;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:1.25rem;
+      color:var(--blue);
+      text-decoration:none;
+      font-weight:700;
+    }
+    .back:hover{text-decoration:underline}
+
+    @media (max-width: 520px){
+      h1{font-size:1.7rem}
+      p{font-size:1.0rem}
+      iframe{height:900px;} /* a bit taller on mobile */
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Pick a time for your coaching session</h1>
+      <p>Select an available slot on the calendar below.</p>
+
+      <div class="frame-wrap">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=carbuycoaching%40gmail.com&ctz=America%2FLos_Angeles"
+          scrolling="no"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bay Area Car Coaching Calendar">
+        </iframe>
+      </div>
+
+      <div style="text-align:center;">
+        <a class="back" href="/">← Back to the homepage</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
