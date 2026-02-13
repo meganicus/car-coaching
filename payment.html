@@ -3,52 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pay for Your Session | Bay Area Car Coaching</title>
-  <meta name="description" content="Pay for your 1-on-1 car buying strategy session securely with PayPal." />
+  <title>Secure Your Session | Bay Area Car Coaching</title>
+  <meta name="description" content="Secure your 1-on-1 car buying strategy session before stepping into a dealership." />
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f7f7f7; color:#111; }
-    main { max-width: 720px; margin: 56px auto; background:#fff; border-radius: 14px; padding: 34px 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08); text-align:center; }
-    h1 { margin: 0 0 8px; }
-    .sub { margin: 0 0 18px; color:#555; }
-    .price { font-size: 40px; font-weight: 800; margin: 18px 0; }
-    .row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top: 18px; }
-    .btn { display:inline-block; padding: 14px 22px; border-radius: 10px; text-decoration:none; font-weight:700; border:0; cursor:pointer; }
-    .btn-card { background:#111; color:#fff; }
-    .btn-paypal { background:#003087; color:#fff; }
-    ul { text-align:left; max-width: 520px; margin: 18px auto 0; }
-    li { margin: 10px 0; }
-    footer { margin-top: 22px; font-size: 13px; color:#666; }
-    a { color: inherit; }
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f4f4f4; color:#111; }
+    main { max-width:720px; margin:60px auto; background:#fff; padding:40px 24px;
+      border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.08); text-align:center; }
+    h1 { margin-bottom:8px; }
+    .sub { color:#555; margin-bottom:20px; }
+    .price { font-size:42px; font-weight:800; margin:20px 0; }
+    ul { text-align:left; max-width:520px; margin:0 auto 24px; }
+    li { margin:10px 0; }
+    .paypal-wrap { margin-top:20px; }
+    footer { margin-top:30px; font-size:13px; color:#666; }
+    a { color:inherit; }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Secure Your Session</h1>
-    <p class="sub"><strong>Before you step into a dealership, talk to an insider.</strong></p>
 
-    <div class="price">$150</div>
+<main>
+  <h1>Secure Your 1-on-1 Session</h1>
+  <p class="sub"><strong>Before you step into a dealership, talk to an insider.</strong></p>
 
-    <ul>
-      <li>Negotiation strategy tailored to your deal</li>
-      <li>Review dealer fees, markups, and add-ons</li>
-      <li>Finance office guidance (warranties, GAP, rate terms)</li>
-      <li>First-time buyer & newcomer support</li>
-    </ul>
+  <div class="price">$150</div>
 
-    <div class="row">
-<!-- PayPal Button (replace S6HTUCEA4JTVW after creating a PayPal "Buy Now" button) -->
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:0;">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="S6HTUCEA4JTVW">
-        <input type="submit" class="btn btn-paypal" value="Pay with PayPal">
-      </form>
-    </div>
+  <ul>
+    <li>Negotiation strategy tailored to your deal</li>
+    <li>Dealer fee & markup review</li>
+    <li>Finance office breakdown (GAP, warranties, rates)</li>
+    <li>First-time buyer & newcomer guidance</li>
+  </ul>
 
-    <footer>
-      After payment, you’ll be redirected to schedule your session.<br>
-      <a href="/privacy-policy.html">Privacy Policy</a>
-    </footer>
-  </main>
+  <div class="paypal-wrap">
+    <div id="paypal-container-S6HTUCEA4JTVW"></div>
+  </div>
+
+  <footer>
+    After payment, you'll be redirected to schedule your session.<br><br>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+  </footer>
+</main>
+
+<!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=BAAhB1P_ux3FckEgsuoePxJ9iQb0BgQbeYoDYn-dnLsWKssXDND1oDYmfo3yLCYeG4B6gXTTr3WErZsZRA&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "S6HTUCEA4JTVW"
+  }).render("#paypal-container-S6HTUCEA4JTVW");
+</script>
+
 </body>
 </html>
