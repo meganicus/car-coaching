@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pay for Your Session | Bay Area Car Coaching</title>
+  <meta name="description" content="Pay for your 1-on-1 car buying strategy session securely with PayPal." />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f7f7f7; color:#111; }
+    main { max-width: 720px; margin: 56px auto; background:#fff; border-radius: 14px; padding: 34px 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08); text-align:center; }
+    h1 { margin: 0 0 8px; }
+    .sub { margin: 0 0 18px; color:#555; }
+    .price { font-size: 40px; font-weight: 800; margin: 18px 0; }
+    .row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top: 18px; }
+    .btn { display:inline-block; padding: 14px 22px; border-radius: 10px; text-decoration:none; font-weight:700; border:0; cursor:pointer; }
+    .btn-card { background:#111; color:#fff; }
+    .btn-paypal { background:#003087; color:#fff; }
+    ul { text-align:left; max-width: 520px; margin: 18px auto 0; }
+    li { margin: 10px 0; }
+    footer { margin-top: 22px; font-size: 13px; color:#666; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Secure Your Session</h1>
+    <p class="sub"><strong>Before you step into a dealership, talk to an insider.</strong></p>
+
+    <div class="price">$150</div>
+
+    <ul>
+      <li>Negotiation strategy tailored to your deal</li>
+      <li>Review dealer fees, markups, and add-ons</li>
+      <li>Finance office guidance (warranties, GAP, rate terms)</li>
+      <li>First-time buyer & newcomer support</li>
+    </ul>
+
+    <div class="row">
+<!-- PayPal Button (replace S6HTUCEA4JTVW after creating a PayPal "Buy Now" button) -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:0;">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="S6HTUCEA4JTVW">
+        <input type="submit" class="btn btn-paypal" value="Pay with PayPal">
+      </form>
+    </div>
+
+    <footer>
+      After payment, you’ll be redirected to schedule your session.<br>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>

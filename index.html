@@ -560,6 +560,19 @@
             <div class="savings">Save $100 💰</div>
             <p style="color: #64748b; margin: 1.5rem 0;">Complete 1-on-1 coaching through the entire car buying process</p>
             <a href="#get-started" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2.5rem; display: inline-block; margin-top: 1rem;">Book Your Session</a>
+            <div style="margin-top: 1rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+              
+
+              <!-- PayPal Button (replace S6HTUCEA4JTVW after creating a PayPal "Buy Now" button) -->
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:0;">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="S6HTUCEA4JTVW">
+                <input type="submit" value="Pay with PayPal" class="cta-button" style="background:#003087; padding: 0.9rem 1.4rem;">
+              </form>
+            </div>
+            <p style="margin-top: .75rem; font-size: .95rem; color: #64748b;">
+              After payment, you’ll be redirected to schedule your session.
+            </p>
             <p class="limited-time">⏰ Offer ends February 28, 2026</p>
         </div>
     </section>
@@ -590,6 +603,23 @@
     <p style="margin-top: .75rem; font-size: .95rem; color: #64748b;">
       If you don't see a confirmation screen in the form, scroll to the bottom and click “Submit”.
     </p>
+
+    <p style="margin-top: 1.25rem; font-size: 1.05rem; color: #111; font-weight: 700;">
+      Step 2: Secure your session
+    </p>
+    <div style="display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; margin-top:.75rem;">
+      
+
+      <!-- PayPal Button (replace S6HTUCEA4JTVW after creating a PayPal "Buy Now" button) -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:0;">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="S6HTUCEA4JTVW">
+        <input type="submit" value="Pay with PayPal" class="cta-button" style="background:#003087;">
+      </form>
+    </div>
+    <p style="margin-top: .75rem; font-size: .95rem; color: #64748b;">
+      You’ll be redirected after payment to pick a time.
+    </p>
   </div>
 </section>
 
@@ -605,6 +635,9 @@
 
 <footer>
   <p>© <span id="year"></span> Bay Area Car Coaching</p>
+  <p style="margin-top:.5rem;">
+    <a href="/privacy-policy.html">Privacy Policy</a> • <a href="/payment.html">Payment</a>
+  </p>
 </footer>
 
 <script>
@@ -620,7 +653,6 @@
     });
   }
 
-  const ema
 </script>
 </body>
 </html>
