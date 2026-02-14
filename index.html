@@ -485,7 +485,12 @@
             <a href="/" class="logo"><img src="round_logo.png" alt="Bay Area Car Buying Coach"></a>
             <ul class="nav-links">
                 <li><a href="#why-us">Why Us</a></li>
+                <li><a href="/services.html">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
+                <li><a href="/san-francisco-car-buying-coach.html">San Francisco</a></li>
+                <li><a href="/san-jose-car-buying-coach.html">San Jose</a></li>
+                <li><a href="/oakland-car-buying-help.html">Oakland</a></li>
+                <li><a href="/blog/">Blog</a></li>
                 <li><a href="#get-started">Get Started</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -642,6 +647,41 @@
 </section>
 
 
+
+<section class="features" id="resources" style="margin-top: 0;">
+  <div class="section-header">
+    <h2>Explore Resources</h2>
+    <p>Browse services and location pages to find the right support for your Bay Area car purchase or lease.</p>
+  </div>
+
+  <div class="feature-grid" style="margin-top: 1.5rem;">
+    <div class="feature-card">
+      <div class="feature-icon">🧭</div>
+      <h3>Services</h3>
+      <p>See exactly how coaching works—negotiation strategy, lease vs buy, and finance office protection.</p>
+      <p style="margin-top: 12px;"><a href="/services.html" class="cta-button" style="display:inline-block; padding:.65rem 1.1rem;">View Services</a></p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📍</div>
+      <h3>Local Support</h3>
+      <p>City pages built for Bay Area buyers—learn what to watch for and how to negotiate in your area.</p>
+      <p style="margin-top: 12px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a href="/san-francisco-car-buying-coach.html" class="cta-button" style="display:inline-block; padding:.55rem .9rem;">SF</a>
+        <a href="/san-jose-car-buying-coach.html" class="cta-button" style="display:inline-block; padding:.55rem .9rem;">San Jose</a>
+        <a href="/oakland-car-buying-help.html" class="cta-button" style="display:inline-block; padding:.55rem .9rem;">Oakland</a>
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📝</div>
+      <h3>Blog</h3>
+      <p>Practical guides: dealer fees, markups, negotiation ranges, and how to avoid expensive mistakes.</p>
+      <p style="margin-top: 12px;"><a href="/blog/" class="cta-button" style="display:inline-block; padding:.65rem 1.1rem;">Read Articles</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <h2>Get in Touch</h2>
   <p>Have questions? Reach out and we'll be happy to help.</p>
@@ -662,7 +702,12 @@
       </a>
   </div>
 
-  <div style="margin-top:20px;">
+  <div style="margin-top:20px; display:flex; justify-content:center; gap:18px; flex-wrap:wrap;">
+      <a href="/services.html">Services</a>
+      <a href="/san-francisco-car-buying-coach.html">San Francisco</a>
+      <a href="/san-jose-car-buying-coach.html">San Jose</a>
+      <a href="/oakland-car-buying-help.html">Oakland</a>
+      <a href="/blog/">Blog</a>
       <a href="/privacy-policy.html">Privacy Policy</a>
   </div>
 </footer>
@@ -678,6 +723,15 @@
       const isOpen = nav.classList.toggle("open");
       btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
+
+    // close the mobile nav after tapping a link
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        nav.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    });
+
   }
 </script>
 </body>

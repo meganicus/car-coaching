@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bayareacarcoaching.com/</loc>
-    <lastmod>2026-02-05</lastmod>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://bayareacarcoaching.com/</loc></url>
+  <url><loc>https://bayareacarcoaching.com/services.html</loc></url>
+  <url><loc>https://bayareacarcoaching.com/san-francisco-car-buying-coach.html</loc></url>
+  <url><loc>https://bayareacarcoaching.com/san-jose-car-buying-coach.html</loc></url>
+  <url><loc>https://bayareacarcoaching.com/oakland-car-buying-help.html</loc></url>
+  <url><loc>https://bayareacarcoaching.com/blog/</loc></url>
+  <url><loc>https://bayareacarcoaching.com/blog/how-much-can-you-negotiate-a-car.html</loc></url>
 </urlset>
